@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test:staged": "jest"
   },
   "repository": {
     "type": "git",
@@ -15,7 +16,12 @@
   "bugs": {
     "url": "https://github.com/caiohsfar/clean-node-api/issues"
   },
-  "homepage": "https://github.com/caiohsfar/clean-node-api#readme",  
+  "homepage": "https://github.com/caiohsfar/clean-node-api#readme",
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  },
   "devDependencies": {
     "husky": "^4.2.5",
     "jest": "^25.4.0",
