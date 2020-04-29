@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --watch",
-    "test:staged": "jest --passWithNoTests --findRelatedTests",
-    "test:ci": "jest --coverage"
+    "test": "jest --noStackTrace --silent --colors",
+    "test:unit": "npm test -- --watch",
+    "test:staged": "npm test -- --findRelatedTests",
+    "test:ci": "npm test -- --coverage"
   },
   "repository": {
     "type": "git",
